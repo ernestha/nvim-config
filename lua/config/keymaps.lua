@@ -48,4 +48,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- [[ Plugin keymaps ]]
+vim.keymap.set("n", "-", "<cmd>Oil --float<CR>", { desc="Open parent directory in Oil file browser" })
+
 -- vim: ts=2 sts=2 sw=2 et
